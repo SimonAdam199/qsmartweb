@@ -6,10 +6,12 @@ import About from '../components/About'
 import Contact from '../components/Contact'
 import NavDots from '../components/NavDots'
 
+export const revalidate = 0 // prefer static generation
+
 export default function Page() {
   return (
     <main className="slide-container">
-      <section id="hero" className="slide flex items-center justify-center bg-gradient-to-b from-slate-50 to-white">
+      <section id="hero" className="slide hero-bg flex items-center justify-center">
         <Hero />
       </section>
 
