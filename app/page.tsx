@@ -3,6 +3,7 @@ import Hero from '../components/Hero'
 import Services from '../components/Services'
 import Technologies from '../components/Technologies'
 import About from '../components/About'
+import Trust from '../components/Trust'
 import Contact from '../components/Contact'
 import NavDots from '../components/NavDots'
 
@@ -21,6 +22,10 @@ export default function Page() {
 
       <section id="technologies" className="slide flex items-center justify-center bg-slate-50">
         <Technologies />
+      </section>
+
+      <section id="trust" className="slide flex items-center justify-center">
+        <Trust />
       </section>
 
       <section id="about" className="slide flex items-center justify-center">
