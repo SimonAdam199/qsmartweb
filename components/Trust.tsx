@@ -1,9 +1,11 @@
+import SectionIcon from './SectionIcon'
+
 export default function Trust() {
   return (
-    <section className="max-w-6xl mx-auto section-panel dense layered">
+  <section className="max-w-6xl mx-auto section-panel dense layered" id="trust">
       <div className="section-split">
         <div>
-          <h2 className="section-heading">Trusted for mission-critical automation</h2>
+      <h2 className="section-heading"><span className="section-icon mr-3 inline-block align-middle"><SectionIcon name="about" /></span>Trusted for mission-critical automation</h2>
 
           <p className="lead mt-4">When automation touches revenue, compliance, or customer experience, you require predictable delivery, robust error handling, and documented operations — not experiments.</p>
 
@@ -20,7 +22,7 @@ export default function Trust() {
           <h4 className="font-semibold">Operational guarantees</h4>
           <p className="mt-3 text-slate-700">We deliver runbooks, SLOs, and a staged cutover plan so teams inherit a system they can operate reliably.</p>
           <div className="mt-6">
-            <a href="#contact" className="btn-primary">Book a free automation audit</a>
+            <a href="#contact" className="btn-primary">Contact us about operational guarantees</a>
           </div>
         </aside>
       </div>

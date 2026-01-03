@@ -1,19 +1,34 @@
-:root{
-  /* colors */
+:root {
+  /* Colors */
   --color-bg: #ffffff;
   --color-ink: #0f172a;
   --accent-1: #6c5ce7;
   --accent-2: #00b4d8;
   --muted: #94a3b8;
 
-  /* spacing */
-  --space-xxl: 6rem;
-  --space-xl: 3.5rem;
-  --space-lg: 2rem;
-  --space-md: 1.25rem;
+  /* Numeric brand tokens for mix-blend / gradients */
+  --brand-ink: 16 24 32;
+  --brand-1: 6 12 34;
+  --brand-2: 12 18 36;
+  --accent-1-n: 99 102 241;
+  --accent-2-n: 139 92 246;
+  --muted-n: 107 114 128;
 
-  /* type */
-  --type-display: 68px;
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+
+  /* Type (reduced display for improved readability) */
+  --type-display: 56px; /* reduced from 68px */
   --type-heading: 28px;
   --type-lead: 18px;
+
+  /* Soft background gradients for depth */
+  --page-gradient: linear-gradient(180deg, rgba(250,250,253,1) 0%, rgba(244,246,255,1) 50%, rgba(237,242,255,1) 100%);
+  --accent-gradient: linear-gradient(90deg, rgba(108,92,231,0.15), rgba(0,180,216,0.12));
+
 }

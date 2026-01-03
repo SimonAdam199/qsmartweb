@@ -1,6 +1,6 @@
 'use client'
 
-import { useCallback } from 'react'
+import { useCallback, useEffect } from 'react'
 
 export default function ClientTracker() {
   const sendEvent = useCallback(async (type: string, payload: any = {}) => {
@@ -15,9 +15,16 @@ export default function ClientTracker() {
     }
   }, [])
 
-  // expose a simple global for inline handlers
-  // @ts-ignore
-  if (typeof window !== 'undefined') window.__qs_track = sendEvent
+  useEffect(() => {
+    // expose a simple global for inline handlers after mount
+    // @ts-ignore
+    window.__qs_track = sendEvent
+    return () => {
+      // clean up global on unmount
+      // @ts-ignore
+      try { delete (window as any).__qs_track } catch (e) {}
+    }
+  }, [sendEvent])
 
   return null
 }

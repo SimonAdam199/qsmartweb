@@ -8,4 +8,6 @@ export default function NavDots() {
       ))}
     </nav>
   )
+  // NavDots are not used in multi-page mode; keep as no-op to avoid errors.
+  return null
 }

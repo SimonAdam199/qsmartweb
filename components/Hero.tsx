@@ -1,22 +1,19 @@
-export default function Hero() {
+import SectionIcon from './SectionIcon'
+
+export default function Hero(){
   return (
-    <section className="max-w-5xl mx-auto section-panel airy layered">
-      <div className="noise-overlay" aria-hidden="true"></div>
-      <h1 className="display">
-        For Founders, CTOs and Heads of Operations — deploy automation that reliably reduces cost and accelerates delivery
-      </h1>
-
-      <p className="lead mt-6">
-        Q‑Smart delivers AI-led automation and durable Temporal workflows on Azure for measurable cost reduction, predictable delivery, and reduced operational risk. We design with observability, recovery, and SLAs as first-class requirements.
-      </p>
-
-      <div className="mt-8 flex flex-col items-center gap-3">
-        <a href="#contact" className="btn-primary">Book a free automation audit</a>
+    <section className="section">
+      <div className="container">
+        <div className="hero-inner mx-auto max-w-6xl">
+          <h1 className="section-title">For Founders, CTOs and Heads of Operations — deploy automation that reliably reduces cost and accelerates delivery</h1>
+          <p className="mt-8">Q‑Smart is a specialist consultancy that turns automation into measurable business performance: fewer manual hours, lower operating costs, and faster time-to-value. We deliver production-grade AI workflows and Temporal orchestrations on Azure with clear KPIs and operational guarantees.</p>
+          <p className="mt-4">Our company delivers AI-led automation and durable Temporal workflows on Azure for measurable cost reduction, predictable delivery, and reduced operational risk.</p>
+          <p className="mt-4">If you own revenue, margins, or operations and want to see concrete automation outcomes — contact us and we’ll outline pragmatic steps to prove value quickly.</p>
+          <div className="mt-12">
+            <a href="/contact" className="btn">Contact us</a>
+          </div>
+        </div>
       </div>
-
-      <p className="mt-6 text-sm text-slate-500 max-w-prose mx-auto">
-        We run qualified audits and only work on projects where automation moves the needle on revenue, margins, or operational risk.
-      </p>
-  </section>
+    </section>
   )
 }
