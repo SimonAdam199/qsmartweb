@@ -34,12 +34,12 @@ export default function Contact() {
   <div className="max-w-5xl p-8 mx-auto">
   <h2 className="text-3xl font-bold text-center text-white" id="contact"><span className="section-icon mr-3 inline-block align-middle"><SectionIcon name="contact" /></span>Contact us to explore automation</h2>
 
-  <p className="text-lg text-white text-center mb-16 mt-6">Tell us about a process you want to improve — we’ll show what’s possible with AI-led automation, Temporal workflows, and enterprise Azure deployments and propose a pragmatic next step.</p>
+  <p className="text-lg text-white text-center mb-16 mt-6">Tell us about a process you want to improve — we&apos;ll show what&apos;s possible with AI-led automation, Temporal workflows, and enterprise Azure deployments and propose a pragmatic next step.</p>
 
       <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
         <aside className="order-last md:order-first p-6 rounded-lg bg-white/95 border border-slate-100">
-          <h3 className="font-semibold text-slate-900">Contact info</h3>
-          <p className="mt-2 text-slate-700">Let's make something awesome together!</p>
+            <h3 className="font-semibold text-slate-900">Contact info</h3>
+          <p className="mt-2 text-slate-700">Let&apos;s make something awesome together!</p>
 
           <address className="not-italic mt-4 text-sm text-slate-700">
             <div className="text-slate-900">Q-smart s.r.o.</div>
@@ -58,7 +58,7 @@ export default function Contact() {
         <div>
           {status === 'sent' ? (
             <div className="mt-2 p-4 rounded-md bg-emerald-50 border border-emerald-100 text-emerald-800">
-              Thank you — your message has been received. We'll review your details and reach out to discuss next steps (pilot, proof-of-concept, or deployment).
+              Thank you — your message has been received. We&apos;ll review your details and reach out to discuss next steps (pilot, proof-of-concept, or deployment).
             </div>
           ) : (
             <form onSubmit={onSubmit} className="space-y-4">
